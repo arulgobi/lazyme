@@ -49,8 +49,8 @@ def config_split(start_string,end_string,temp_file_hd):
         if is_match_start and is_end_marker:
             is_match_start = False
             is_end_marker = False
-            splited_config = []
             splited_config_main.append(splited_config)
+            splited_config = []
     return  splited_config_main
 
 bundle = defaultdict(list)
