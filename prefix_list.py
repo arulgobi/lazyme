@@ -1,6 +1,7 @@
 import re
 
 def convert_prefix_set(lines):
+    #doesn't handle deny statements 
     len_prefix = len(lines)
     name = lines[0].split(' ')[2]
     print "prefix-set {}".format(name)
@@ -22,6 +23,7 @@ def convert_prefix_set(lines):
     print "end-set"
     
 def split_lines(file_lines):
+#split the lines by ! and pass it to other function. 
     temp_lines = []
     #print file_lines
     for each_line in file_lines:
@@ -32,7 +34,8 @@ def split_lines(file_lines):
             temp_lines = []
         else:
             temp_lines.append(each_line)
-        
+
+#have the prefix-list entries delimeter by !. 
 file_hd_temp = open('prefix-list.txt')
 file_lines = file_hd_temp.readlines()
 
