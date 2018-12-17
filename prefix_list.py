@@ -1,7 +1,7 @@
 import re
-prefix  = """ip prefix-list 4300400971-Prefix seq 5 permit 103.31.24.0/23
-ip prefix-list 4300400971-Prefix seq 10 permit 103.31.24.0/24
-ip prefix-list 4300400971-Prefix seq 15 permit 103.31.25.0/24"""
+prefix  = """ip prefix-list 4300400971-Prefix seq 5 permit 192.168.24.0/23
+ip prefix-list 4300400971-Prefix seq 10 permit 192.168.24.0/24
+ip prefix-list 4300400971-Prefix seq 15 permit 192.168.25.0/24"""
 
 
 lines = prefix.split('\n')
